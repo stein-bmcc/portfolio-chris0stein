@@ -1,6 +1,9 @@
 /* =========================
   NAVIGATION STYLING
   =========================  */
+  .site-header{
+    background-color: #eaeaea;
+  }
   .site-nav {
     position: sticky;
     top: 0;
@@ -8,9 +11,10 @@
     flex-wrap: wrap;
     row-gap: 1rem; /* adds space between logo and nav items if the items wrap under the logo */
     justify-content: space-between;
-    padding: 1.5rem 2rem;
+    padding: 0 2rem;
     background-color: #eaeaea;
     transition: top 500ms ease-in-out;
+    /* height: 4rem; */
   }
   
   .logo {
@@ -18,6 +22,13 @@
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 0.2em;
+    
+  }
+
+  .logo h1{
+    font-size: 1.5rem;
+    line-height: 4rem;
+    margin: 0;
   }
   
   /* CSS Hamburger Icon 
@@ -25,6 +36,10 @@
   .hamburger{
     padding-right: 1rem;
     position: relative;
+    /* height: 4rem; */
+    display: block;
+    height: 2rem;
+    margin: auto 0;
   }
   .hamburger span, 
   .hamburger span:before,
@@ -40,12 +55,15 @@
   }
   .hamburger span{
     top:5px;
+    top: 0;
   }
   .hamburger span:before {
     top: -10px;
+    top: 10px;
   }
   .hamburger span:after {
-    bottom: -10px;
+    /* bottom: -10px; */
+    top: 20px;
   }
   
   
@@ -71,7 +89,7 @@
   .links a{
     display: block;
     line-height: 4rem;
-    margin: 2rem 0;
+    margin: 1rem 0;
   }
   
   .links {
@@ -101,5 +119,9 @@
     .links a {
       display: inline-block;
       margin: 0 1em;
+    }
+    .site-nav{
+      max-width: 1400px;
+      margin: 0 auto;
     }
   }
