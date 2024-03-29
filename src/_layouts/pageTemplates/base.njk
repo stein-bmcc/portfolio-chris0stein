@@ -22,21 +22,37 @@ siteTitle: Chris Stein Portfolio
     <link rel="apple-touch-icon" href="icon.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/nav.css">
     <link rel="stylesheet" href="/css/styles.css">
     </head>
   <body class="{{pageClass}}">
     <header class="site-header">
-      {% include "navigation.njk" %}<!-- Add your nav element to the _includes/navigation.njk file -->
-    </header>
+      <nav class="site-nav">
+          <div class="logo">
+              <h1>Chris Stein</h1> 
+              <!-- Chris Stein -->
+          </div>
+          <a href="#" class="hamburger" id="nav-toggle"><span></span></a>
+          <div class="links" id="nav-links">
+              <a href="/">Home</a>
+              <a href="/work">Work</a>
+              <a href="/about">About</a>
+          </div>
+        </nav>
+  </header>
   
     <main class="main page-content">
       {{ content | safe }}
     </main>
 
     <footer class="site-footer">
-      Copyright Chris
-      <!-- Add your footer content here s-->
-    </footer>
+      <div class="footer-text">
+          © 2024 Copyright: Christopher Stein
+          <a class="social-link" href="https://www.instagram.com/your_instagram_username">
+              <img src="/images/instagram_icon.png" alt="Instagram Icon" width="20" height="20">
+          </a>
+      </div>
+  </footer>
   
     <!-- Load CDN version of jQuery. For other versions visit this page: https://code.jquery.com/jquery/ -->
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
