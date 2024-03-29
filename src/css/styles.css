@@ -162,6 +162,31 @@ See for more info: https://codepen.io/profstein/pen/mrMLRj
       } */
 
 
+      /* DEFAULT LAYOUT */
+
+      main{
+        margin: 2rem;
+        border-right: 1px solid black;
+        border-left: 1px solid black;
+      }
+      @media screen and (min-width: 640px) {
+        main{
+          margin: 0 auto;
+          max-width:90%
+        }
+      }
+      @media screen and (min-width: 900px) {
+        main{
+          margin: 0 auto;
+          max-width:90%
+        }
+      }
+      @media screen and (min-width: 1264px) {
+        main{
+          margin: 0 auto;
+          max-width:1200px
+        }
+      }
       /* HOME layout cards
        */
 
